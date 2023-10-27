@@ -161,7 +161,9 @@
         void fastscan(string number){
             char c;
             for(;;c=getchar()){
-                number+=c;
+                if(c!=' ' && c!='\n' && c!='\t' && c!='\r'){
+                    number+=c;
+                }
             }
         }
         void fastscan(float &number){
