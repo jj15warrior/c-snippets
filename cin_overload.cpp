@@ -157,6 +157,7 @@
         } 
         void fastscan(char &number){
             number = getchar();
+            while(number==' ' || number=='\n') number=getchar();
         }
         void fastscan(string number){
             char c;
